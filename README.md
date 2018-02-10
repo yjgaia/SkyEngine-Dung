@@ -1,6 +1,8 @@
 # SkyEngine-Dung
 [SkyEngine](https://github.com/Hanul/SkyEngine)으로 개발한 똥피하기 게임입니다.
 
+![Screenshot](dung.png)
+
 ## 라이센스
 [MIT](LICENSE)
 
