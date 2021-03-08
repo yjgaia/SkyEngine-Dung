@@ -1,0 +1,26 @@
+{
+    "name": "skyengine-dung",
+    "author": "Sim Young Jae",
+    "homepage": "https://github.com/Hanul/skyengine-dung",
+    "version": "0.0.1",
+    "types": "./lib/index.d.ts",
+    "main": "./lib/index.js",
+    "scripts": {
+        "webpack-dev": "webpack --mode development --watch --config webpack.config.dev.js",
+        "webpack-prod": "webpack --mode production --config webpack.config.prod.js"
+    },
+    "dependencies": {
+        "@hanul/el.js": "file:../el.js",
+        "eventcontainer": "file:../eventcontainer",
+        "ts-loader": "^8.0.13",
+        "typescript": "^4.1.3",
+        "webpack": "^5.11.1"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.12.0",
+        "@typescript-eslint/parser": "^4.12.0",
+        "eslint": "^7.17.0",
+        "webpack-cli": "^4.3.1",
+        "source-map-loader": "^2.0.0"
+    }
+}

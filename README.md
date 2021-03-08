@@ -1,10 +1,10 @@
 # SkyEngine-Dung
-[SkyEngine](https://github.com/Hanul/SkyEngine)으로 개발한 똥피하기 게임입니다.
+dung avoidance game made with [SkyEngine](https://github.com/Hanul/SkyEngine).
 
 ![Screenshot](dung.png)
 
-## 라이센스
+## License
 [MIT](LICENSE)
 
-## 작성자
+## Author
 [Young Jae Sim](https://github.com/Hanul)
