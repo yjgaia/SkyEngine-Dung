@@ -1,10 +1,12 @@
+import { Fullscreen } from "@hanul/skyengine";
 import { BodyNode } from "@hanul/skynode";
-import { Fullscreen, BGM } from "@hanul/skyengine";
-
-new BGM({ mp3: "bgms/main_screen_bgm.mp3" }).play();
+import MainScreen from "./view/MainScreen";
 
 const screen = new Fullscreen({
     width: 360,
     height: 640,
 });
+
+new MainScreen().appendTo(screen.root);
+
 BodyNode.append(screen);
