@@ -1,5 +1,4 @@
 import { Fullscreen } from "@hanul/skyengine";
-import { BodyNode } from "@hanul/skynode";
 import MainScreen from "./view/MainScreen";
 
 const screen = new Fullscreen({
@@ -8,5 +7,3 @@ const screen = new Fullscreen({
 });
 
 new MainScreen().appendTo(screen.root);
-
-BodyNode.append(screen);

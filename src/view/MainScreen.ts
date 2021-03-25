@@ -1,5 +1,6 @@
 import { Background, BGM, GameNode, Image, Sound } from "@hanul/skyengine";
 import { el } from "@hanul/skynode";
+import BattleField from "./BattleField";
 
 export default class MainScreen extends GameNode {
 
@@ -8,8 +9,8 @@ export default class MainScreen extends GameNode {
     constructor() {
         super();
         this.append(
-            new Background({ speedX: -100, src: "bg.png" }),
-            new Image({ y: -200, src: "title.png" }),
+            new Background({ speedX: -100, src: "images/bg.png" }),
+            new Image({ y: -200, src: "images/title.png" }),
             new GameNode({
                 y: -120,
                 dom: el("div", {
@@ -22,11 +23,14 @@ export default class MainScreen extends GameNode {
             new GameNode({
                 y: 110,
                 dom: el("a",
-                    el("img", { src: "start_button.png" }),
+                    el("img", { src: "images/start_button.png" }),
                     {
                         click: () => {
-                            new Sound({ wav: "sound_start_game.wav" }).play();
-                            //TODO: Open Battlefield.
+                            new Sound({ wav: "sound/sound_start_game.wav" }).play();
+                            if (this.parent !== undefined) {
+                                new BattleField().appendTo(this.parent);
+                            }
+                            this.delete();
                         },
                     },
                 ),
