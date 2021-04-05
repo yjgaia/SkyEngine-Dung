@@ -26,8 +26,8 @@ export default class MainScreen extends GameNode {
                     el("img", { src: "images/start_button.png" }),
                     {
                         click: () => {
-                            new Sound({ wav: "sound/sound_start_game.wav" }).play();
                             if (this.parent !== undefined) {
+                                new Sound({ wav: "sound/sound_start_game.wav" }).play();
                                 new BattleField().appendTo(this.parent);
                             }
                             this.delete();

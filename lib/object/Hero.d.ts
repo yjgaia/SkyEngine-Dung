@@ -1,4 +1,6 @@
-import { GameNode } from "@hanul/skyengine";
-export default class Hero extends GameNode {
+import { StateSet } from "@hanul/skyengine";
+import { GameNodeOptions } from "@hanul/skyengine/lib/GameNode";
+export default class Hero extends StateSet {
+    constructor(options: GameNodeOptions);
 }
 //# sourceMappingURL=Hero.d.ts.map

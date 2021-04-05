@@ -1,6 +1,5 @@
-import { GameNode } from "@hanul/skyengine";
-export default class Dung extends GameNode {
-    private image;
+import { Image } from "@hanul/skyengine";
+export default class Dung extends Image {
     constructor();
 }
 //# sourceMappingURL=Dung.d.ts.map

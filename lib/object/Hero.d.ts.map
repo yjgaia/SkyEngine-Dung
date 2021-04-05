@@ -1,1 +1,1 @@
-{"version":3,"file":"Hero.d.ts","sourceRoot":"","sources":["../../src/object/Hero.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,kBAAkB,CAAC;AAE5C,MAAM,CAAC,OAAO,OAAO,IAAK,SAAQ,QAAQ;CACzC"}
+{"version":3,"file":"Hero.d.ts","sourceRoot":"","sources":["../../src/object/Hero.ts"],"names":[],"mappings":"AAAA,OAAO,EAAuB,QAAQ,EAAE,MAAM,kBAAkB,CAAC;AACjE,OAAO,EAAE,eAAe,EAAE,MAAM,+BAA+B,CAAC;AAEhE,MAAM,CAAC,OAAO,OAAO,IAAK,SAAQ,QAAQ;gBAE1B,OAAO,EAAE,eAAe;CAWvC"}

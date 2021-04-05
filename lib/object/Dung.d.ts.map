@@ -1,1 +1,1 @@
-{"version":3,"file":"Dung.d.ts","sourceRoot":"","sources":["../../src/object/Dung.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAe,MAAM,kBAAkB,CAAC;AAEzD,MAAM,CAAC,OAAO,OAAO,IAAK,SAAQ,QAAQ;IAEtC,OAAO,CAAC,KAAK,CAAyC;;CAezD"}
+{"version":3,"file":"Dung.d.ts","sourceRoot":"","sources":["../../src/object/Dung.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAe,MAAM,kBAAkB,CAAC;AAGtD,MAAM,CAAC,OAAO,OAAO,IAAK,SAAQ,KAAK;;CAqBtC"}
