@@ -3,6 +3,7 @@ export default class BattleField extends GameNode {
     private point;
     private period;
     private hero;
+    private dungs;
     private joystick;
     private pointPanel;
     constructor();

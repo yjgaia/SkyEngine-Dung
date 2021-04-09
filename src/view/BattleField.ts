@@ -1,5 +1,6 @@
 import { Background, GameNode, Interval, Joystick, JoystickType, Sound } from "@hanul/skyengine";
 import { DomNode, el } from "@hanul/skynode";
+import SkyUtil from "skyutil";
 import Dung from "../object/Dung";
 import Hero from "../object/Hero";
 
@@ -9,6 +10,8 @@ export default class BattleField extends GameNode {
     private period = 5;
 
     private hero: Hero;
+    private dungs: Dung[] = [];
+
     private joystick: Joystick;
     private pointPanel: DomNode;
 
@@ -64,13 +67,15 @@ export default class BattleField extends GameNode {
         new Interval(this, 100, () => {
 
             if (count % this.period === 0) {
-                const dung = new Dung();
+                const dung = new Dung().appendTo(this);
                 dung.on("drop", () => {
                     if (this.hero.state !== "dead") {
                         this.point += 1;
                         this.pointPanel.empty().appendText(`점수: ${this.point}`);
                     }
+                    SkyUtil.pull(this.dungs, dung);
                 });
+                this.dungs.push(dung);
             }
 
             if (this.period > 1 && count % 100 === 0) {
@@ -80,7 +85,7 @@ export default class BattleField extends GameNode {
             count += 1;
         });
 
-        this.hero.onMeet(Dung, () => {
+        this.hero.onMeet(this.dungs, () => {
             if (this.hero.state !== "dead") {
                 this.hero.state = "dead";
 
