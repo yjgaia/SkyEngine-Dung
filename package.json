@@ -15,7 +15,7 @@
         "skyutil": "^0.0.1",
         "ts-loader": "^8.0.13",
         "typescript": "^4.1.3",
-        "webpack": "^5.11.1"
+        "webpack": "^5.76.0"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^4.12.0",
